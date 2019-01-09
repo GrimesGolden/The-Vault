@@ -1,3 +1,4 @@
+//Converts input text into whale song
 let input = 'A whale of a deal!';
 const vowels = ['a', 'e', 'i', 'o', 'u'];
 let resultArray = [];
