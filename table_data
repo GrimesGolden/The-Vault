@@ -6,18 +6,16 @@ table_data = [
 ]
 
 def convert_table(table):
-  dictionary_list = []
   dictionary = {}
+  dictionary_list = []
+  item_length = len(table[0])
   for name in table[0]:
-    for i in table_data:
-      for item in i:
-        dictionary[name] = i
-    dictionary_list.append(dictionary)
-        
-  print(dictionary_list)
+    dictionary[name] = "placeholder"
+  dictionary_list.append(dictionary)
   
-        
-  
+  header_row = dictionary_list[0]
+  for i in range(item_length):
+    print("\n")
+    for lists in table:
+      print(lists[i])
       
-
-convert_table(table_data)
