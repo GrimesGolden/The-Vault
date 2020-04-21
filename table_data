@@ -8,14 +8,30 @@ table_data = [
 def convert_table(table):
   dictionary = {}
   dictionary_list = []
+  new_list = []
   item_length = len(table[0])
   for name in table[0]:
     dictionary[name] = "placeholder"
   dictionary_list.append(dictionary)
   
   header_row = dictionary_list[0]
+  
   for i in range(item_length):
-    print("\n")
     for lists in table:
-      print(lists[i])
-      
+      new_list.append(lists[i])
+  print(new_list)
+  
+  counter = 0
+  for i in range(item_length):
+    del new_list[counter]
+    counter += 3;
+  print("/n")
+  print(new_list)
+    
+  counter1 = 0
+  for i in range(len(new_list)):
+    print(new_list[0])
+    counter1 += 3
+  
+convert_table(table_data)
+
