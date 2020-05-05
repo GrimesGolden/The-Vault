@@ -55,14 +55,3 @@ while True:
 		score += die_2
 	elif user_choice == 3:
 		score += temp_total
-
-
-
-
-
-
-
-
-
-
-
